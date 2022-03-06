@@ -66,12 +66,14 @@ ponemo rgba para poder darle opacidad*/
   transform: rotateY(180deg);
 }
 /*-------------------------------------------------------------------------------------------------------*/
+/*---tarjeta es el que da las dimensiones de la tarjeta-----------*/
 .tarjeta {
   width: 500px;
   height: 300px;
   position: relative;
-  transform-style: preserve-3d;
-  transition: all 800ms;
+  perspective: 1000px;
+  transform-style: preserve-3d; /*perserva el flip osea el movimiento en 3d*/
+  transition: all 800ms; /* nos permite dar una trancicon mas lenta o rapida al movimiento que determinamos con le hover*/
 }
 
 .tarjeta-frente {
@@ -144,7 +146,7 @@ ponemo rgba para poder darle opacidad*/
 .cuerpo-tarjeta_atras span {
   font-size: 0.8rem;
 }
-
+/*cuerpo de la tarjeta de la aprte del frente*/
 .cuerpo-tarjeta_frente {
   width: 100%;
   height: 100%;
@@ -167,7 +169,7 @@ ponemo rgba para poder darle opacidad*/
   background: rgba(0, 0, 0, 0.4);
   border-radius: 20px;
 }
-
+/*cuerpo de la tarjeta de la parte de atras*/
 .cuerpo-tarjeta_atras {
   padding: 40px;
   text-align: center;
