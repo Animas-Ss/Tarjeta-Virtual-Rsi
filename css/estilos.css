@@ -228,3 +228,28 @@ ponemo rgba para poder darle opacidad*/
     transform: rotate(0deg);
   }
 }
+/*-------------------------------------------------------------------------------------------------------*/
+@media (max-width: 700px) {
+  .container__carta {
+    top: 5%;
+    left: 10px;
+  }
+  .tarjeta {
+    width: 300px;
+    height: 500px;
+  }
+  .engrane-izquierda {
+    position: absolute;
+    transform: translate(50px, 150px);
+  }
+  .engrane-izquierda img {
+    width: 150%;
+  }
+}
+@media (orientation: landscape) {
+  .container__carta {
+    margin-top: 10px;
+    top: 0;
+    left: calc(50% - 250px);
+  }
+}

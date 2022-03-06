@@ -1,7 +1,7 @@
-console.log("hola");
+
 
 particlesJS('particles-js',
- {
+  {
     "particles": {
       "number": {
         "value": 80,
